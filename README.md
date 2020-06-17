@@ -7,7 +7,6 @@ In order to use this directive you just need to specify the styling for the scro
 
 That specific part of your code should look like this: 
 ```html
-<style>
   ::-webkit-scrollbar {
   // ...your custom style here
   }
@@ -19,7 +18,6 @@ That specific part of your code should look like this:
   .scroll-out::-webkit-scrollbar-thumb {
     background-color: transparent;
   }
-</style>
 ```
 
 Your HTML code should now look like this (after you've implemented the directive):
