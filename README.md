@@ -6,18 +6,20 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 In order to use this directive you just need to specify the styling for the scroll bar in the `style.scss` file, the most important part is the one that contains the `scroll-out` class.
 
 That specific part of your code should look like this: 
-```css
-::-webkit-scrollbar {
+```html
+<style>
+  ::-webkit-scrollbar {
   // ...your custom style here
-}
+  }
 
-::-webkit-scrollbar-thumb {
-  // ... custom styling.
-}
+  ::-webkit-scrollbar-thumb {
+    // ... custom styling.
+  }
 
-.scroll-out::-webkit-scrollbar-thumb {
-  background-color: transparent;
-}
+  .scroll-out::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+</style>
 ```
 
 Your HTML code should now look like this (after you've implemented the directive):
