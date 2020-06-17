@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  border-radius: 10px;
+  width: 8px;
+  z-index: 100;
+  position: relative;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  width: 8px;
+  border-radius: 10px;
+}
+
+.scroll-out::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
