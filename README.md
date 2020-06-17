@@ -5,7 +5,22 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## How to use
 In order to use this directive you just need to specify the styling for the scroll bar in the `style.scss` file, the most important part is the one that contains the `scroll-out` class.
 
-Your HTML code should now look like this:
+That specific part of your code should look like this: 
+```css
+::-webkit-scrollbar {
+  // ...your custom style here
+}
+
+::-webkit-scrollbar-thumb {
+  // ... custom styling.
+}
+
+.scroll-out::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+```
+
+Your HTML code should now look like this (after you've implemented the directive):
 
 ```html
 <div class="container" appAutoHideScroll>
