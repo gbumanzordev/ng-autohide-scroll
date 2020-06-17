@@ -1,27 +1,10 @@
-# AutohideScroll
+# Auto-hide Scroll
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
-## Development server
+## How to use
+In order to use this directive you just need to specify the styling for the scroll bar in the `style.scss` file, the most important part is the one that contains the `scroll-out` class.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+After that, you just only need to call the directive anywhere you think it will be required to. If you want to change the `scroll-out` class name to any other name you'd like, you can but you will need to change the same name that's in the directive to avoid issues.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Questions? [@umanzorgerson](https://www.twitter.com/umanzorgerson "Contact me on twitter") or you can leave a pull request in this repo.
