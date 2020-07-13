@@ -4,17 +4,17 @@ import { Directive, HostBinding, HostListener } from '@angular/core';
   selector: '[appAutoHideScroll]',
 })
 export class AutoHideScrollDirective {
-  @HostBinding('class.scroll-out') visible: boolean;
+  @HostBinding('class.hidden-scrollbar') isScrollbarHidden: boolean;
 
   constructor() {
-    this.visible = true;
+    this.isScrollbarHidden = true;
   }
 
   @HostListener('mouseenter', ['$event']) onMouseEnter(e: MouseEvent) {
-    this.visible = false;
+    this.isScrollbarHidden = false;
   }
 
   @HostListener('mouseleave', ['$event']) onMouseLeave(e: MouseEvent) {
-    this.visible = true;
+    this.isScrollbarHidden = true;
   }
 }

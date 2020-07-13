@@ -2,18 +2,21 @@
   max-width: 100vw;
   height: 100vh;
   overflow-y: scroll;
-  padding: 16px;
+  padding: 32px;
   font-size: 16px;
   line-height: 30px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .child-div {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
   padding: 32px;
   max-width: 800px;
   height: 350px;
   overflow: scroll;
-  margin: 0 auto;
   text-align: justify;
   margin-bottom: 24px;
+  border: solid 2px #ddd;
 }
